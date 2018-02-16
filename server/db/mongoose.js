@@ -9,7 +9,7 @@ let db = {
 
 mongoose.connect(process.env.PORT ? db.mlab : db.localhost, {useMongoClient: true})
     .then(
-        () => console.log('Works'),
+        () => console.log('Connection Success'),
         err => console.log('Unable to connect to db', err)
     );
 
